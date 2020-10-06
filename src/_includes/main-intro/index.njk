@@ -12,13 +12,9 @@
           <time datetime="{% isoDate conf.start %}">{% confDate conf.start, 'DD' %}</time>-<time datetime="{% isoDate conf.end %}">{% confDate conf.end, 'DD' %}</time>
         </span>
       </span>
-      <a href="{{conf.venue.mapsLink}}" rel="noopener noreferrer" target="_blank" class="{% className css, 'location-main' %}">{{conf.venue.name}}</a>
-      <span class="{% className css, 'location-sub' %}">{{conf.venue.city}}, {{conf.venue.region}}</span>
+      <span target="_blank" class="{% className css, 'location-main' %}">Virtual conference</span>
+      <span class="{% className css, 'location-sub' %}">Wherever You Are, World</span>
     </p>
-    <div class="{% className css, 'about' %}">
-      <p>{{conf.teaser}}</p>
-      <p>Registrations are now closed, but you can <a href="{{conf.path}}remote/">join us remotely</a>.</p>
-    </div>
     <div class="{% className css, 'actions' %}">
       {% set icslink="fullevent.ics" %}
       {% include "add-to-cal/index.njk" %}

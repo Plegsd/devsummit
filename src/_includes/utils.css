@@ -25,3 +25,37 @@
     object-fit: cover;
   }
 }
+
+.register {
+  position: relative;
+  font-size: 0.75em;
+  line-height: normal;
+  text-decoration: none;
+  color: var(--lightblue);
+  background: var(--link-color);
+  border-radius: 1000px;
+  padding: 0.9em 1.5em;
+  box-shadow: 0 3px 16px var(--blue-a25);
+
+  &:hover {
+    color: var(--lightblue);
+    text-decoration: underline;
+  }
+
+  @media (min-width: 720px) {
+    --icon-size: 1.7em;
+    padding-left: calc(var(--icon-size) + 1.8em);
+
+    &::before {
+      content: '';
+      background: url('confboxAsset(/assets/register-icon.svg)') no-repeat;
+      background-size: contain;
+      width: var(--icon-size);
+      height: var(--icon-size);
+      position: absolute;
+      top: 50%;
+      left: 0.8em;
+      transform: translateY(-50%);
+    }
+  }
+}

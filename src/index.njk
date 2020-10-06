@@ -12,18 +12,6 @@ description: Join the Chrome team for our two-day summit on the latest technique
       "name": "{{conf.conferenceName}}",
       "startDate": "{% confDate conf.start, 'YYYY-MM-DDTHH:mm' %}",
       "endDate": "{% confDate conf.end, 'YYYY-MM-DDTHH:mm' %}",
-      "location": {
-        "@type": "Place",
-        "name": "{{conf.venue.name}}",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "{{conf.venue.streetAddress}}",
-          "addressLocality": "{{conf.venue.city}}",
-          "postalCode": "{{conf.venue.postalCode}}",
-          "addressRegion": "{{conf.venue.region}}",
-          "addressCountry": "{{conf.venue.country}}"
-        }
-      },
       "image": [
         "{{conf.origin}}confboxAsset(/assets/social-share.jpg)"
       ],
@@ -31,6 +19,7 @@ description: Join the Chrome team for our two-day summit on the latest technique
     }
   </script>
 
+  {% include 'main-intro/index.njk' %}
   {% include 'keynote/index.njk' %}
   {% include 'sessions-promo/index.njk' %}
   {% include 'previously/index.njk' %}

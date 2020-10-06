@@ -6,7 +6,7 @@
   padding: 4.4rem var(--side-margin);
 
   @media (min-width: 720px) {
-    min-height: 90vh;
+    min-height: 80vh;
     display: grid;
     grid-template-columns: minmax(450px, calc(46% - 4rem)) 1fr;
     grid-column-gap: 4rem;
@@ -40,23 +40,24 @@
   line-height: 1;
 
   @media (min-width: 720px) {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
 }
 
 .location-main {
   display: block;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  margin-top: 1.4rem;
 }
 
 .location-sub {
   display: block;
   font-weight: 300;
   margin: 0.35em 0;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 
   @media (min-width: 720px) {
-    margin: 0.2em 0;
+    margin: 0.2em 0 4.7rem;
   }
 }
 

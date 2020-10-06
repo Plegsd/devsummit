@@ -10,21 +10,13 @@ module.exports = {
   /**
    * Name of the conference.
    */
-  conferenceName: 'Chrome Dev Summit 2019',
+  conferenceName: 'Chrome Dev Summit 2020',
   teaser:
     "Join the Chrome team for our two-day summit to learn about the latest techniques for building for the modern Web, get an early insight into what we're working on, and to share your thoughts on how we can move the platform forward, together.",
   /**
    * Data of the conference venue.
    */
-  venue: {
-    name: 'Yerba Buena Center for the Arts',
-    city: 'San Francisco',
-    region: 'CA',
-    country: 'US',
-    postalCode: '94103',
-    streetAddress: '701 Mission St',
-    mapsLink: 'https://goo.gl/maps/TBiTuFitnqe1wxPW7',
-  },
+  venue: {},
   /**
    * Conference Twitter account
    */
@@ -37,15 +29,16 @@ module.exports = {
   /**
    * Start of conference in the above timezone, in the format: YYYY/MM/DD HH:mm.
    */
-  start: '2019/11/11 09:00',
+  start: '2020/12/09 00:00',
   /**
    * Start of conference in the above timezone, in the format: YYYY/MM/DD HH:mm.
    */
-  end: '2019/11/12 17:00',
+  end: '2019/12/10 23:59',
   /**
    * Additional schedule items. These are merged with the content in /sessions/.
    */
   extraSchedule: [
+    /*
     // Day 1
     {
       title: 'Registration & breakfast',
@@ -138,5 +131,6 @@ module.exports = {
       start: '2019/11/12 17:45',
       end: '2019/11/12 17:46',
     },
+  */
   ],
 };

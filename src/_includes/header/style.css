@@ -66,13 +66,21 @@
   }
 }
 
-.title-main {
+.title-main,
+.title-sub {
   font-size: 9vw;
-  color: var(--midgrey);
 
   @media (min-width: 720px) {
-    font-size: 0.98em;
+    font-size: 0.8em;
   }
+}
+
+.title-main {
+  color: var(--midgrey);
+}
+
+.title-sub {
+  color: var(--darkgrey);
 }
 
 .title-year {
@@ -81,47 +89,17 @@
   font-size: 23.1vw;
 
   @media (min-width: 720px) {
-    font-size: 1.4em;
+    font-size: 0.7em;
   }
 }
 
 .register {
   grid-area: 1 / reg;
+
   position: absolute;
   left: 50%;
   top: 100%;
   transform: translate(-50%, -50%);
-
-  font-size: 0.75em;
-  line-height: normal;
-  text-decoration: none;
-  color: var(--lightblue);
-  background: var(--link-color);
-  border-radius: 1000px;
-  padding: 0.6em 1.2em;
-  box-shadow: var(--blue-shadow);
-
-  display: grid;
-  grid-template-columns: max-content max-content;
-  grid-auto-flow: column;
-  align-items: center;
-  grid-gap: 0.5rem;
-
-  --icon-size: 1.7em;
-
-  &::before {
-    content: '';
-    background: url('confboxAsset(/assets/small-youtube-icon.svg)') no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: var(--icon-size);
-    height: var(--icon-size);
-  }
-
-  &:hover {
-    color: var(--lightblue);
-    text-decoration: underline;
-  }
 
   @media (min-width: 720px) {
     position: relative;

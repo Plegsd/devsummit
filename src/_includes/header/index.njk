@@ -11,7 +11,8 @@
       </div>
     </div>
     <div class="{% className css, 'title-text' %}">
-      <div class="{% className css, 'title-main' %}">dev summit</div>
+      <div class="{% className css, 'title-main' %}">Chrome</div>
+      <div class="{% className css, 'title-sub' %}">Dev Summit</div>
       <time class="{% className css, 'title-year' %}">{% confDate conf.start, 'YYYY' %}</time>
     </div>
   </a>
@@ -21,15 +22,5 @@
     <a href="{{conf.path}}remote/">Remote</a>
     <a href="{{conf.path}}faqs/">FAQs</a>
   </div>
-  {% if page.url !== '/' and page.url !== '/schedule/' %}
-    <a href="{{conf.path}}" style="display:none" class="{% className css, 'register' %}">Live Stream</a>
-    <script>
-      const now = Number(new URL(location).searchParams.get('now')) || Date.now();
-      const start = {{ conf.start }} - (1000 * 60 * 60 * 2);
-      const end = {{ conf.end }};
-      if (now > start && now < end) {
-        document.currentScript.previousElementSibling.style.display = '';
-      }
-    </script>
-  {% endif %}
+  <a href="https://events.withgoogle.com/chrome-dev-summit-2019/registrations/new/" rel="noopener noreferrer" target="_blank" class="{% className utilsCSS, 'register' %} {% className css, 'register' %}">Request an invite</a>
 </div>
