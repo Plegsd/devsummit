@@ -136,9 +136,9 @@ a {
     text-decoration: none;
   }
 
-  @media (prefers-color-scheme: dark) {
+  /*@media (prefers-color-scheme: dark) {
     font-weight: normal;
-  }
+  }*/
 }
 
 ::selection {

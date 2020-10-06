@@ -54,9 +54,9 @@
     }
   }
 
-  @media (prefers-color-scheme: dark) {
+  /*@media (prefers-color-scheme: dark) {
     filter: invert(1) contrast(0.7);
-  }
+  }*/
 }
 
 .heading {

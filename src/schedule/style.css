@@ -60,9 +60,9 @@
     grid-column: first;
   }
 
-  @media (prefers-color-scheme: dark) {
+  /*@media (prefers-color-scheme: dark) {
     color: white;
-  }
+  }*/
 }
 
 .date-name {
@@ -110,9 +110,9 @@
     font-size: 0.6rem;
   }
 
-  @media (prefers-color-scheme: dark) {
+  /*@media (prefers-color-scheme: dark) {
     color: white;
-  }
+  }*/
 }
 
 .divider {
@@ -339,9 +339,9 @@
     right: calc(50% - (var(--size) * var(--sides)) / 2);
     bottom: 100%;
 
-    @media (prefers-color-scheme: dark) {
+    /*@media (prefers-color-scheme: dark) {
       background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="2" height="1"><path fill="%23171a1c" d="M0 1l1-1 1 1z"/><path vector-effect="non-scaling-stroke" stroke="%23252a2d" fill="none" d="M0 1l1-1 1 1"/></svg>');
-    }
+    }*/
 
     @media (min-width: 320px) {
       --size: 0.71rem;
@@ -353,9 +353,9 @@
       height: calc(var(--size) * var(--sides));
       background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="2"><path fill="white" d="M1 0L0 1l1 1z"/><path vector-effect="non-scaling-stroke" stroke="%23e8eaed" fill="none" d="M1 0L0 1l1 1"/></svg>');
 
-      @media (prefers-color-scheme: dark) {
+      /*@media (prefers-color-scheme: dark) {
         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="2"><path fill="%23171a1c" d="M1 0L0 1l1 1z"/><path vector-effect="non-scaling-stroke" stroke="%23252a2d" fill="none" d="M1 0L0 1l1 1"/></svg>');
-      }
+      }*/
     }
 
     @media (min-width: 720px) {

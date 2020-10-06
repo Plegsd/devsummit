@@ -29,10 +29,10 @@
     bottom: 0;
   }
 
-  @media (prefers-color-scheme: dark) {
+  /*@media (prefers-color-scheme: dark) {
     filter: invert(1) contrast(0.8);
     background-color: hsl(217 10% 89%);
-  }
+  }*/
 }
 
 .header-content {
@@ -122,10 +122,10 @@
 .street-map {
   border: 1px solid var(--darkoffwhite);
 
-  @media (prefers-color-scheme: dark) {
+  /*@media (prefers-color-scheme: dark) {
     filter: invert(1) contrast(0.7);
     border-color: var(--black);
-  }
+  }*/
 }
 
 .address-h {
@@ -240,9 +240,9 @@
     grid-gap: 1rem;
   }
 
-  @media (prefers-color-scheme: dark) {
+  /*@media (prefers-color-scheme: dark) {
     filter: invert(1) contrast(0.8);
-  }
+  }*/
 }
 
 .additional-info {
