@@ -3,7 +3,7 @@ const fs = require('fs');
 const date = require('date-and-time');
 const nunjucks = require('nunjucks');
 const { dirname, basename } = require('path');
-const createSchedule = require('./src/schedule/script/create-schedule');
+//const createSchedule = require('./src/schedule/script/create-schedule');
 const createCalendarWidget = require('./src/_includes/calendar-widget/script/create-widget.js');
 const { dateStrToTimestamp } = require('./src/utils/date-helper.js');
 

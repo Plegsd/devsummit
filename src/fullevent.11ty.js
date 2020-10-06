@@ -9,13 +9,14 @@ module.exports = class iCal {
   }
 
   render({ conf, collections }) {
-    return icalGenerator(
-      conf.conferenceName,
-      collections.session.map(session => ({
-        name: `${session.data.title} - ${conf.conferenceName}`,
-        start: dateStrToTimestamp(session.data.start, conf.utcOffset),
-        end: dateStrToTimestamp(session.data.end, conf.utcOffset),
-      })),
-    );
+    const events = collections.session
+      ? collections.session.map(session => ({
+          name: `${session.data.title} - ${conf.conferenceName}`,
+          start: dateStrToTimestamp(session.data.start, conf.utcOffset),
+          end: dateStrToTimestamp(session.data.end, conf.utcOffset),
+        }))
+      : [{ name: conf.conferenceName, start: conf.start, end: conf.end }];
+
+    return icalGenerator(conf.conferenceName, events);
   }
 };

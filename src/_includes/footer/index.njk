@@ -1,26 +1,42 @@
 {%- set moduleCSS = "/_includes/module.css" -%}
-{% css page, moduleCSS %}
+{% css page,
+moduleCSS %}
 {%- set css = "/_includes/footer/style.css" -%}
-{% css page, css %}
+{% css page,
+css %}
 
 <div class="{% className moduleCSS, 'root' %} {% className css, 'root' %}">
   <nav class="{% className css, 'footer-nav' %}">
-    <a href="{{conf.path}}schedule/">Schedule</a>
-    <a href="{{conf.path}}venue/">Venue</a>
-    <a href="{{conf.path}}remote/">Remote</a>
     <a href="{{conf.path}}faqs/">FAQs</a>
   </nav>
   <div class="{% className css, 'divider' %}"></div>
   <ul class="{% className css, 'social' %}">
-    <li><a href="https://twitter.com/chromiumdev" rel="noopener noreferrer" target="_blank"><span class="{% className css, 'icon-mask' %} {% className css, 'icon-twitter' %}">Twitter</span></a></li>
-    <li><a href="https://www.youtube.com/user/ChromeDevelopers" rel="noopener noreferrer" target="_blank"><span class="{% className css, 'icon-mask' %} {% className css, 'icon-youtube' %}">YouTube</span></a></li>
-    <li><a href="mailto:chrome-dev-summit@google.com"><span class="{% className css, 'icon-mask' %} {% className css, 'icon-email' %}">Email</span></a></li>
+    <li>
+      <a href="https://twitter.com/chromiumdev" rel="noopener noreferrer" target="_blank">
+        <span class="{% className css, 'icon-mask' %} {% className css, 'icon-twitter' %}">Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/user/ChromeDevelopers" rel="noopener noreferrer" target="_blank">
+        <span class="{% className css, 'icon-mask' %} {% className css, 'icon-youtube' %}">YouTube</span></a>
+    </li>
+    <li>
+      <a href="mailto:chrome-dev-summit@google.com">
+        <span class="{% className css, 'icon-mask' %} {% className css, 'icon-email' %}">Email</span></a>
+    </li>
   </ul>
   <div class="{% className css, 'logo' %}"></div>
   <ul class="{% className css, 'legal' %}">
-    <li><a href="https://github.com/GoogleChrome/devsummit" rel="noopener noreferrer" target="_blank"><span class="{% className css, 'icon-mask' %}" style="--icon: url(confboxAsset(/_includes/footer/assets/github.svg)"></span> Source Code</a></li>
-    <li><a href="https://policies.google.com/" rel="noopener noreferrer" target="_blank">Privacy &amp; Terms</a></li>
-    <li><a href="{{conf.path}}community-guidelines/">Community Guidelines</a></li>
-    <li>© Google 2019</li>
+    <li>
+      <a href="https://github.com/GoogleChrome/devsummit" rel="noopener noreferrer" target="_blank">
+        <span class="{% className css, 'icon-mask' %}" style="--icon: url(confboxAsset(/_includes/footer/assets/github.svg)"></span>
+        Source Code</a>
+    </li>
+    <li>
+      <a href="https://policies.google.com/" rel="noopener noreferrer" target="_blank">Privacy &amp; Terms</a>
+    </li>
+    <li>
+      <a href="{{conf.path}}community-guidelines/">Community Guidelines</a>
+    </li>
+    <li>© Google 2020</li>
   </ul>
 </div>

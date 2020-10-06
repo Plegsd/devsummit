@@ -1,30 +1,43 @@
-
 {%- set moduleCSS = "/_includes/module.css" -%}
-{% css page, moduleCSS %}
+{% css page,
+moduleCSS %}
 {%- set css = "/_includes/previously/style.css" -%}
-{% css page, css %}
+{% css page,
+css %}
 
-{%
-  set images = [
-    {url: "1", alt: "Chrome Dev Summit 2019 sandbox area"},
-    {url: "2", alt: "Audience"},
-    {url: "3", alt: "Outside the venue"},
-    {url: "4", alt: "The MCs"},
-    {url: "5", alt: "Attendee filming the event on their phone"},
-    {url: "6", alt: "Attendees chatting"},
-    {url: "7", alt: "Attendees laughing"},
-    {url: "8", alt: "Attendees watching"},
-    {url: "9", alt: "Code labs"}
-  ]
-%}
+{% set images = [
+  {
+    url: "1",
+    alt: "Chrome Dev Summit 2019 sandbox area"
+  }, {
+    url: "2",
+    alt: "Audience"
+  }, {
+    url: "3",
+    alt: "Outside the venue"
+  }, {
+    url: "4",
+    alt: "The MCs"
+  }, {
+    url: "5",
+    alt: "Attendee filming the event on their phone"
+  }, {
+    url: "6",
+    alt: "Attendees chatting"
+  }, {
+    url: "7",
+    alt: "Attendees laughing"
+  }, {
+    url: "8",
+    alt: "Attendees watching"
+  }, {
+    url: "9",
+    alt: "Code labs"
+  }
+] %}
 
 {% macro imageTag(image) %}
-  <img
-    decoding="async"
-    alt="{{ image.alt }}"
-    loading="lazy"
-    src="confboxAsset(/_includes/previously/assets/{{ image.url }}.jpg)"
-  >
+  <img decoding="async" alt="{{ image.alt }}" loading="lazy" src="confboxAsset(/_includes/previously/assets/{{ image.url }}.jpg)">
 {% endmacro %}
 
 <section class="{% className moduleCSS, 'root-alt' %}">
@@ -32,6 +45,7 @@
 
   <p>
     All previous sessions are on YouTube:
+    <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIDA1uGhqy45bqlul0VcvKMr">2019</a>,
     <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIDjlCx1PcphPpmf43aKOAdF">2018</a>,
     <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcICUD5nBfRdAR6Fveosnqa5m">2017</a>,
     <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBTs2KPy1E6tIYaWoFcG3uj">2016</a>,

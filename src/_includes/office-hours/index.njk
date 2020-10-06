@@ -1,0 +1,30 @@
+{% extends "layouts/media-module/index.njk" %}
+
+{% block mediaRootClass -%}
+  {% className mediaCSS, 'root-alt' %}
+{%- endblock %}
+{% block mediaClass -%}
+  {% className mediaCSS, 'media-decorative' %}
+{%- endblock %}
+
+{% block main %}
+  <h1 id="livestream" class="{% className moduleCSS, 'heading' %}">{% headingSlug "Hours" %}</h1>
+
+  <p>
+    So what if we can’t meet in person? We’ll be there to run private, virtual Office Hours and limited capacity Workshops across topics such as Performance, Web Vitals, Trust & Safety, PWA, CSS, UX & Design. You name it.
+  </p>
+  <p>
+    While we iron out some logistical creases, remember to
+    <a href="{{conf.registerLink}}">Request an Invite</a>
+    so you don’t miss out!
+  </p>
+{% endblock %}
+
+{% block media %}
+  {%- set utilsCSS = "/_includes/utils.css" -%}
+  {% css page,
+  utilsCSS %}
+  <div class="{% className utilsCSS, 'aspect-ratio' %}" style="--aspect-ratio: calc(16/9)">
+    <iframe class="{% className utilsCSS, 'media-fill' %}" src="https://www.youtube.com/embed/XZcmtqL4JPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+  </div>
+{% endblock %}

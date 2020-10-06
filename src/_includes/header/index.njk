@@ -1,7 +1,9 @@
 {% set utilsCSS = "/_includes/utils.css" %}
-{% css page, utilsCSS %}
+{% css page,
+utilsCSS %}
 {% set css = "/_includes/header/style.css" %}
-{% css page, css %}
+{% css page,
+css %}
 
 <div class="{% className css, 'root' %}">
   <a class="{% className css, 'title' %}" href="{{conf.path}}">
@@ -13,14 +15,13 @@
     <div class="{% className css, 'title-text' %}">
       <div class="{% className css, 'title-main' %}">Chrome</div>
       <div class="{% className css, 'title-sub' %}">Dev Summit</div>
-      <time class="{% className css, 'title-year' %}">{% confDate conf.start, 'YYYY' %}</time>
+      <time class="{% className css, 'title-year' %}">{% confDate conf.start,
+        'YYYY' %}</time>
     </div>
   </a>
   <div class="{% className css, 'extra-links' %}">
-    <a href="{{conf.path}}schedule/">Schedule</a>
-    <a href="{{conf.path}}venue/">Venue</a>
-    <a href="{{conf.path}}remote/">Remote</a>
     <a href="{{conf.path}}faqs/">FAQs</a>
+    <a href="{{conf.path}}community-guidelines/">Guidelines</a>
   </div>
-  <a href="https://events.withgoogle.com/chrome-dev-summit-2019/registrations/new/" rel="noopener noreferrer" target="_blank" class="{% className utilsCSS, 'register' %} {% className css, 'register' %}">Request an invite</a>
+  <a href="{{conf.registerLink}}" rel="noopener noreferrer" target="_blank" class="{% className utilsCSS, 'register' %} {% className css, 'register' %}">Request an invite</a>
 </div>

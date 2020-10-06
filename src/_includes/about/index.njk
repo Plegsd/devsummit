@@ -1,0 +1,32 @@
+{%- set moduleCSS = "/_includes/module.css" -%}
+{% css page,
+moduleCSS %}
+{%- set mediaCSS = "/_includes/layouts/media-module/style.css" -%}
+{% css page,
+mediaCSS %}
+{%- set aboutCSS = "/_includes/about/style.css" -%}
+{% css page,
+aboutCSS %}
+
+<section class="{% className moduleCSS, 'root' %} {% className mediaCSS, 'root' %} {% className aboutCSS, 'root' %}">
+  <div class="{% className mediaCSS, 'media' %} {% className aboutCSS, 'media' %}">
+    {%- set utilsCSS = "/_includes/utils.css" -%}
+    {% css page,
+    utilsCSS %}
+    <div class="{% className utilsCSS, 'aspect-ratio' %} {% className aboutCSS, 'livestream' %}" style="--aspect-ratio: calc(16/9)">
+      <iframe class="{% className utilsCSS, 'media-fill' %}" src="https://www.youtube.com/embed/F1UP7wRCPH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+  </div>
+  <div class="{% className mediaCSS, 'main' %}">
+    <h1 id="livestream" class="{% className moduleCSS, 'heading' %}">{% headingSlug "About" %}</h1>
+    <p>
+      <strong>Chrome Developer Summit</strong>
+      is back with its 8th chapter, but this time we’re coming to you. We’re bringing all the latest updates, just as much content, and many more Chromies to you.
+    </p>
+    <p>
+      While our sessions are open to all, we’ll be running limited capacity workshops and office hours.
+      <a href="{{conf.registerLink}}">Request an invite</a>
+      now to ensure we can add you to the roster for these and more exclusive experiences that we’re working on.
+    </p>
+  </div>
+</section>

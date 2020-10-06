@@ -1,9 +1,16 @@
-.root {
+.root,
+.root-alt {
   @media (min-width: 1024px) {
     display: grid;
     grid-template-columns: [main] 1fr [media] 54%;
     grid-column-gap: 4rem;
     align-items: center;
+  }
+}
+
+.root-alt {
+  @media (min-width: 1024px) {
+    grid-template-columns: [media] 1fr [main] 54%;
   }
 }
 
@@ -21,6 +28,16 @@
   }
 
   @media (min-width: 1024px) {
+    margin: 0;
+    grid-column: media;
+  }
+}
+
+.media-decorative {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
     margin: 0;
     grid-column: media;
   }

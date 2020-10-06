@@ -1,13 +1,15 @@
 {%- set moduleCSS = "/_includes/module.css" -%}
-{% css page, moduleCSS %}
+{% css page,
+moduleCSS %}
 {%- set promoCSS = "/_includes/icon-promo.css" -%}
-{% css page, promoCSS %}
+{% css page,
+promoCSS %}
 
 <section class="{% className moduleCSS, 'root' %} {% className promoCSS, 'root' %}">
   <div class="{% className promoCSS, 'icon' %}">
     <img src="confboxAsset('/assets/youtube-icon.svg')" alt="YouTube">
   </div>
-  <h1 class="{% className promoCSS, 'title' %}">Can’t attend? No worries.</h1>
-  <p class="{% className promoCSS, 'blurb' %}">The whole event will stream from YouTube and also be available to watch after the event ends 👍</p>
-  <a href="https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="{% className promoCSS, 'button' %} {% className promoCSS, 'button-red' %}">Subscribe</a>
+  <h1 class="{% className promoCSS, 'title' %}">Got a question? Ask it live.</h1>
+  <p class="{% className promoCSS, 'blurb' %}">Ask all your burning questions during the sessions on the live chat function.</p>
+  <a href="https://www.youtube.com/channel/UCnUYZLuoy1rq1aVMwx4aTzw?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="{% className promoCSS, 'button' %} {% className promoCSS, 'button-red' %}">YouTube</a>
 </section>

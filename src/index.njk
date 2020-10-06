@@ -12,15 +12,15 @@ description: Join the Chrome team for our two-day summit on the latest technique
       "name": "{{conf.conferenceName}}",
       "startDate": "{% confDate conf.start, 'YYYY-MM-DDTHH:mm' %}",
       "endDate": "{% confDate conf.end, 'YYYY-MM-DDTHH:mm' %}",
-      "image": [
-        "{{conf.origin}}confboxAsset(/assets/social-share.jpg)"
-      ],
+      "image": ["{{conf.origin}}confboxAsset(/assets/social-share.jpg)"],
       "description": "{{conf.teaser}}"
     }
   </script>
 
   {% include 'main-intro/index.njk' %}
-  {% include 'keynote/index.njk' %}
-  {% include 'sessions-promo/index.njk' %}
+  {% include 'about/index.njk' %}
   {% include 'previously/index.njk' %}
+  {% include 'office-hours/index.njk' %}
+  {% include 'faq/index.njk' %}
+  {% include 'subscribe-promo/index.njk' %}
 {% endblock %}
