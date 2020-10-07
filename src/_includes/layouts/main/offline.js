@@ -1,4 +1,4 @@
-//navigator.serviceWorker.register('/devsummit/sw.js');
+navigator.serviceWorker.register('/devsummit/sw.js');
 (async () => {
   const cachedResponse = await caches.match(location.href);
   if (!cachedResponse) return;
