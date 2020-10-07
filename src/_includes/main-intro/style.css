@@ -82,17 +82,14 @@
   }
 }
 
-.squiggles-outer {
+.art-outer {
   height: 100%;
 }
 
-.squiggles {
+.art {
   @media (min-width: 1020px) {
-    background: url('confboxAsset(/assets/squiggles/1.svg)') no-repeat center
-      center;
+    background: url('confboxAsset(/assets/arts/1.png)') no-repeat center center;
     height: 100%;
-    width: 90%;
-    max-width: 560px;
     background-size: contain;
     margin: 0 auto;
   }
