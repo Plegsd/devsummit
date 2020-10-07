@@ -94,9 +94,9 @@
     margin: 0 auto;
   }
 
-  /*@media (prefers-color-scheme: dark) {
-    filter: invert(1) contrast(0.7);
-  }*/
+  @media (prefers-color-scheme: dark) {
+    filter: contrast(0.7);
+  }
 }
 
 .no-wrap {

@@ -27,7 +27,7 @@
   --twitter: #38a1f3;
   --youtube: #ff0000;
 
-  /*@media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     --blue: hsl(214 40% 55%);
     --lightblue: hsl(213 57% 10%);
     --darkblue: hsl(214 70% 59%);
@@ -47,5 +47,4 @@
     --black: hsl(200 10% 90%);
     --black-a50: hsla(0 0% 0% / 90%);
   }
-  */
 }
