@@ -1,3 +1,0 @@
-- The Theatre and Forum at Yerba Buena Center for the Arts is an accessible venue.
-- There is one elevator that allows disabled access to the second level of the building. For access to the elevator, please find a staff member to escort you.
-- In accordance with ADA regulations, specifically designated wheelchair accessible seating in the main auditorium that is reserved for those needing it.

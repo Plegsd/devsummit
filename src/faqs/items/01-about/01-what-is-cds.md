@@ -1,0 +1,1 @@
+Over the two days, Chrome product and engineering teams as well as the wider community come together to envision and build the future of the web. The audience will hear about platform updates, architectural guidance, developer tooling, case studies, and opportunities for increased reach and engagement on the web.
