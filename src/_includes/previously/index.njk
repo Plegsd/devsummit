@@ -2,6 +2,8 @@
 {% css page, moduleCSS %}
 {%- set css = "/_includes/previously/style.css" -%}
 {% css page, css %}
+{%- set contentCSS = "/_includes/content.css" -%}
+{% css page, contentCSS %}
 
 {% set images = [
   {
@@ -38,7 +40,7 @@
   <img decoding="async" alt="{{ image.alt }}" loading="lazy" src="confboxAsset(/_includes/previously/assets/{{ image.url }}.jpg)">
 {% endmacro %}
 
-<section class="{% className moduleCSS, 'root-alt' %}">
+<section class="{% className moduleCSS, 'root-alt' %} {% className contentCSS, 'content-area' %}">
   <h1 class="{% className moduleCSS, 'heading' %}">{% headingSlug "Previously" %}</h1>
 
   <p>
@@ -49,6 +51,7 @@
     <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIBTs2KPy1E6tIYaWoFcG3uj">2016</a>,
     <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcICcHeQY02XLvoGL34rZFWZn">2015</a>. You get the picture!
   </p>
+  
   <div class="{% className css, 'pics' %}">
     <div class="{% className css, 'initial-pics' %}">
       {{ imageTag(images[0]) }}

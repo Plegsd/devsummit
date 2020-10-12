@@ -4,9 +4,11 @@
 {% css page, moduleCSS %}
 {%- set mediaCSS = "/_includes/layouts/media-module/style.css" -%}
 {% css page, mediaCSS %}
+{%- set contentCSS = "/_includes/content.css" -%}
+{% css page, contentCSS %}
 
 <section class="{% className moduleCSS, 'root' %} {% className mediaCSS, 'root-alt' %}">
-  <div class="{% className mediaCSS, 'main' %}">
+  <div class="{% className mediaCSS, 'main' %} {% className contentCSS, 'content-area' %}">
     <h1 id="livestream" class="{% className moduleCSS, 'heading' %}">{% headingSlug "Hours" %}</h1>
     <p>
       So what if we can’t meet in person? We’ll be there to run private, virtual Office Hours
