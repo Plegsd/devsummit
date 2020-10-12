@@ -6,7 +6,7 @@
   grid-template-columns: -webkit-max-content -webkit-max-content;
   grid-template-columns: max-content max-content;
   grid-gap: 1.2rem;
-  margin: 0 calc(var(--side-margin) * -1);
+  margin: 2rem calc(var(--side-margin) * -1) 0;
   padding-bottom: 1rem;
 
   @media (min-width: 500px) {
