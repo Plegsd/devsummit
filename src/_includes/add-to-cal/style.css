@@ -12,7 +12,6 @@
   position: relative;
   --icon-size: 1.5rem;
   padding-left: calc(var(--icon-size) + 0.6em);
-  margin-right: 0.5rem;
 
   &::before {
     content: '';
