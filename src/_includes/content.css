@@ -1,15 +1,15 @@
 .content-area {
   color: var(--offblack);
-  h1,
-  h2,
-  h3,
-  h4 {
-    color: var(--darkgrey);
-  }
+
   h1,
   h2,
   h3,
   h4,
+  blockquote {
+    color: var(--darkgrey);
+    max-width: 35ch;
+  }
+
   li,
   p {
     max-width: 60ch;
@@ -74,7 +74,7 @@
 .category {
   @media (min-width: 1020px) {
     display: grid;
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 40% max-content;
     grid-column-gap: 4rem;
     margin-bottom: 6rem;
   }
