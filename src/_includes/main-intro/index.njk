@@ -21,6 +21,10 @@ utilsCSS %}
       <span class="{% className css, 'location-sub' %}">Wherever You Are</span>
     </p>
     <div class="{% className css, 'actions' %}">
+      <div class="{% className css, 'register-outer' %}">
+        <a href="{{conf.registerLink}}" rel="noopener noreferrer" target="_blank" class="{% className utilsCSS, 'register' %} {% className css, 'register' %}">Request an invite</a>
+        (requires Google sign in)
+      </div>
       {% set icslink = "fullevent.ics" %}
       {% include "add-to-cal/index.njk" %}
     </div>

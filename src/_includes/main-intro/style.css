@@ -74,11 +74,12 @@
 
 .actions {
   @media (min-width: 720px) {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    justify-items: start;
+    gap: 1rem;
     font-size: 0.8rem;
-    margin: 0 0 4rem;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
   }
 }
 
@@ -101,4 +102,17 @@
 
 .no-wrap {
   white-space: nowrap;
+}
+
+.register-outer {
+  display: none;
+
+  @media (min-width: 720px) {
+    display: block;
+  }
+}
+
+.register {
+  display: inline-block;
+  margin-right: 0.5em;
 }
