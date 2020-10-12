@@ -1,5 +1,5 @@
 .decoration {
-  background: url('confboxAsset(/assets/arts/2.png)') no-repeat;
+  background: url('confboxAsset(/assets/arts/2.png)') no-repeat center center;
   height: 100%;
   background-size: contain;
 }
