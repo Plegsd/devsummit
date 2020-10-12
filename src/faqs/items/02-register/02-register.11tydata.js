@@ -1,4 +1,5 @@
 module.exports = {
   sectionTitle: 'Registration',
-  sectionQuestion: 'Do I need to register to view the sessions?',
+  sectionQuestion:
+    'Everything about registration/requesting an invite for CDS 2020',
 };
