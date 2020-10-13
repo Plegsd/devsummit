@@ -36,7 +36,7 @@ module.exports = {
   /**
    * Start of conference in the above timezone, in the format: YYYY/MM/DD HH:mm.
    */
-  end: '2019/12/10 23:59',
+  end: '2020/12/10 23:59',
   /**
    * Additional schedule items. These are merged with the content in /sessions/.
    */
