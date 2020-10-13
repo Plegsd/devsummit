@@ -2,7 +2,7 @@ module.exports = {
   /**
    * Origin of the conference, for creating absolute URLs.
    */
-  origin: 'https://developer.chrome.com',
+  origin: 'https://deploy-preview-353--cds2019.netlify.app',
   /**
    * Path of the site. / if it's top-level.
    */
